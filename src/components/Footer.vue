@@ -1,7 +1,7 @@
 <template lang="html">
     <div class="g-footer">
         <ul class="m-menu">
-            <li>
+            <li class="link">
                 <p><i class="iconfont">&#xe620;</i></p>
                 <p>发现</p>
             </li>
@@ -38,9 +38,16 @@ export default {
   .m-menu {
       display:flex;
       display:-webkit-flex;
+      height:4rem;
+      line-height:4rem;
+      background:#f2f3f1;
       li {
+          line-height:1.5;
           flex:1;
           -webkit-flex:1
+      }
+      li.link {
+          color:#d33a31;
       }
   }
 }

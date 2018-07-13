@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-    <VFooter> </VFooter>
+    <div class="m-index">
+      <VHeader></VHeader>
+      <VFooter> </VFooter>
+    </div>
   </div>
 </template>
 
 <script>
+import VHeader from './components/Header.vue'
 import VFooter from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
+    VHeader,
     VFooter
   }
 }
@@ -18,12 +21,17 @@ export default {
 
 <style>
 @import './common/common.less';
-#app {
+#app, .m-index {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
 }
 </style>
