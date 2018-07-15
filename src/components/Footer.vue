@@ -7,19 +7,19 @@
             </li>
             <li>
                 <p><i class="iconfont">&#xe620;</i></p>
-                <p>发现</p>
+                <p>视频</p>
             </li>
             <li>
                 <p><i class="iconfont">&#xe620;</i></p>
-                <p>发现</p>
+                <p>我的</p>
             </li>
             <li>
                 <p><i class="iconfont">&#xe620;</i></p>
-                <p>发现</p>
+                <p>朋友</p>
             </li>
             <li>
                 <p><i class="iconfont">&#xe620;</i></p>
-                <p>发现</p>
+                <p>账号</p>
             </li>
         </ul>
     </div>
