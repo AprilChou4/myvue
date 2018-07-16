@@ -56,6 +56,9 @@ export default {
     CellFormPreview,
     Badge,
     Spinner
+  },
+  mounted () {
+    this.$store.commit('changeLinkIndex', 3)
   }
 }
 </script>
