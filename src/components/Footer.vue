@@ -2,11 +2,11 @@
     <div class="g-footer">
         <ul class="m-menu">
             <li class="link">
-                <p><i class="iconfont">&#xe620;</i></p>
+                <p><i class="iconfont">&#xe68e;</i></p>
                 <p>发现</p>
             </li>
             <li>
-                <p><i class="iconfont">&#xe620;</i></p>
+                <p><i class="iconfont">&#xe645;</i></p>
                 <p>视频</p>
             </li>
             <li>
@@ -14,11 +14,11 @@
                 <p>我的</p>
             </li>
             <li>
-                <p><i class="iconfont">&#xe620;</i></p>
+                <p><i class="iconfont">&#xe783;</i></p>
                 <p>朋友</p>
             </li>
             <li>
-                <p><i class="iconfont">&#xe620;</i></p>
+                <p><i class="iconfont">&#xe66c;</i></p>
                 <p>账号</p>
             </li>
         </ul>
@@ -31,6 +31,7 @@ export default {
 </script>
 <style lang="less">
 .g-footer {
+    text-align: center;
     position: absolute;
     bottom: 0;
     left: 0;

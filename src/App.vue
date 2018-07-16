@@ -2,6 +2,7 @@
   <div id="app">
     <div class="m-index">
       <VHeader></VHeader>
+      <router-view></router-view>
       <VFooter> </VFooter>
     </div>
   </div>
@@ -23,9 +24,8 @@ export default {
 @import './common/common.less';
 #app, .m-index {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   position: relative;
   width: 100%;
