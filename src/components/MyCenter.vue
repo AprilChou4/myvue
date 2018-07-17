@@ -46,16 +46,14 @@
 </div>
 </template>
 <script>
-import { Cell, CellBox, CellFormPreview, Group, Badge, Spinner } from 'vux'
+import { Cell, CellBox, Group, Badge } from 'vux'
 export default {
   name: 'MyCenter',
   components: {
     Group,
     Cell,
     CellBox,
-    CellFormPreview,
-    Badge,
-    Spinner
+    Badge
   },
   mounted () {
     this.$store.commit('changeLinkIndex', 3)
@@ -78,6 +76,7 @@ export default {
             display: -webkit-flex;
             justify-content: space-around;
             padding: 0.375rem 0 .375rem .375rem;
+            align-items: center;
             img {
                 width:4rem;
                 height:4rem;
@@ -88,7 +87,6 @@ export default {
             .m-item {
                 border-bottom:1px solid #f3f3f3;
                 padding-right:.375rem;
-                padding-top: 0.375rem;
                 flex:1;
             }
             .m-little {

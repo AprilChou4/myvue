@@ -33,5 +33,6 @@ export default {
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
+  background:#f7f7f7;
 }
 </style>

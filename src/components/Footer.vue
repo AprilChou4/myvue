@@ -19,13 +19,13 @@
                     <p>我的</p>
                 </router-link>
             </li>
-            <li>
+            <li :class="{link:linkIndex==4}">
                 <router-link to="/friend">
                     <p><i class="iconfont">&#xe783;</i></p>
                     <p>朋友</p>
                 </router-link>
             </li>
-            <li>
+            <li :class="{link:linkIndex==5}">
                 <router-link to="/account">
                     <p><i class="iconfont">&#xe66c;</i></p>
                     <p>账号</p>
@@ -55,10 +55,9 @@ export default {
       display:flex;
       display:-webkit-flex;
       height:4rem;
-      line-height:4rem;
+      align-items: center;
       background:#f2f3f1;
       li {
-          line-height:1.5;
           flex:1;
           -webkit-flex:1
       }
