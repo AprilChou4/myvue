@@ -86,3 +86,14 @@ html, body {
 .weui-cell_access .weui-cell__ft {
     font-size:.875rem;
 }
+/* 路由过渡效果*/
+.showRouter-enter-active {
+    transition: all .3s ease;
+  }
+  .showRouter-leave-active {
+    transition: all 0 ease-out;
+  }
+  .showRouter-enter, .showRouter-leave-active {
+    transform: translateX(250px);
+    opacity: 0;
+  }

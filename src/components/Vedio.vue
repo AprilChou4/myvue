@@ -1,7 +1,9 @@
 <template>
-<div class="m-vedio">
-    我的视频
-</div>
+<transition name="showRouter">
+  <div class="m-vedio">
+      我的视频
+  </div>
+</transition>
 </template>
 <script>
 // import { Cell, CellBox, CellFormPreview, Group, Badge, Spinner } from 'vux'
