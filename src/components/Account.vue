@@ -1,5 +1,6 @@
 <template>
-<div class="m-find">
+<div class="g-main">
+  <div class="m-account">
     <div class="m-info">
       <div class="basic-info">
         <div class="m-name">
@@ -72,6 +73,7 @@
           <span slot="icon"><i class="iconfont">&#xe622;</i></span>
         </cell>
     </group>
+  </div>
 </div>
 </template>
 <script>
@@ -91,13 +93,7 @@ export default {
 </script>
 <style lang="less" scoped>
 @import '~vux/src/styles/1px.less';
-.m-find {
-  overflow:auto;
-  position: absolute;
-  top: 3.75rem;
-  left: 0;
-  right: 0;
-  bottom: 3.75rem;
+.m-account {
   .m-info {
     background:#fff;
     padding:.875rem;
