@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="m-index">
-      <VHeader></VHeader>
+      <!-- <VHeader></VHeader> -->
       <router-view></router-view>
       <VFooter> </VFooter>
     </div>

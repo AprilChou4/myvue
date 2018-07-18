@@ -1,12 +1,19 @@
 <template>
 <transition name="showRouter">
-  <div class="m-vedio">
-      我的视频
+  <div>
+    <div class="g-header">
+        <i class="iconfont">&#xe77e;</i>
+        <span>我的音乐</span>
+        <i class="iconfont">&#xe649;</i>
+    </div>
+    <div class="g-main">
+      <div class="m-vedio">
+      </div>
+    </div>
   </div>
 </transition>
 </template>
 <script>
-// import { Cell, CellBox, CellFormPreview, Group, Badge, Spinner } from 'vux'
 export default {
   name: 'Vedio',
   mounted () {
@@ -15,5 +22,6 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-
+.m-vedio {
+}
 </style>

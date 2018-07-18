@@ -1,44 +1,51 @@
 <template>
 <transition name="showRouter">
-  <div class="g-main">
-    <div class="m-find">
-        <div>
-          <div class="m-tab">
-            <tab :line-width=3 active-color='#fff' v-model="index" custom-bar-width="1.5rem">
-              <tab-item class="vux-center" :selected="demo2 === item" v-for="(item, index) in list2" @click="demo2 = item" :key="index">{{item}}</tab-item>
-            </tab>
-            <swiper v-model="index" height="100px" :show-dots="false">
-              <swiper-item v-for="(item, index) in list2" :key="index">
-                <div class="tab-swiper vux-center">{{item}} <VHeader></VHeader></div>
-              </swiper-item>
-            </swiper>
+  <div>
+    <div class="g-header">
+          <i class="iconfont">&#xe77e;</i>
+          <span>我的音乐</span>
+          <i class="iconfont">&#xe649;</i>
+      </div>
+    <div class="g-main">
+      <div class="m-find">
+          <div>
+            <div class="m-tab">
+              <tab :line-width=3 active-color='#fff' v-model="index" custom-bar-width="1.5rem">
+                <tab-item class="vux-center" :selected="demo2 === item" v-for="(item, index) in list2" @click="demo2 = item" :key="index">{{item}}</tab-item>
+              </tab>
+              <swiper v-model="index" height="100px" :show-dots="false">
+                <swiper-item v-for="(item, index) in list2" :key="index">
+                  <div class="tab-swiper vux-center">{{item}} <VHeader></VHeader></div>
+                </swiper-item>
+              </swiper>
+            </div>
+            <div class="m-banner">
+              <div class="m-mask"></div>
+              <swiper auto dots-position="center" height="120px" style="width:95%; border-radius:0.375rem; margin:0 auto;">
+                <swiper-item class="swiper-demo-img" v-for="(item, index) in demo04_list" :key="index"><img :src="item"></swiper-item>
+              </swiper>
+            </div>
+            <ul class="m-fmList">
+              <li>
+                <img src="../assets/head.jpg">
+                <p>电台分类</p>
+              </li>
+              <li>
+                <img src="../assets/head.jpg">
+                <p>电台排行</p>
+              </li>
+              <li>
+                <img src="../assets/head.jpg">
+                <p>付费精品</p>
+              </li>
+              <li>
+                <img src="../assets/head.jpg">
+                <p>季冠霖声音课</p>
+              </li>
+            </ul>
+            <panel header="图文结合" :list="list" type="1"></panel>
           </div>
-          <div class="m-banner">
-            <div class="m-mask"></div>
-            <swiper auto dots-position="center" height="120px" style="width:95%; border-radius:0.375rem; margin:0 auto;">
-              <swiper-item class="swiper-demo-img" v-for="(item, index) in demo04_list" :key="index"><img :src="item"></swiper-item>
-            </swiper>
-          </div>
-          <ul class="m-fmList">
-            <li>
-              <img src="../assets/head.jpg">
-              <p>电台分类</p>
-            </li>
-            <li>
-              <img src="../assets/head.jpg">
-              <p>电台排行</p>
-            </li>
-            <li>
-              <img src="../assets/head.jpg">
-              <p>付费精品</p>
-            </li>
-            <li>
-              <img src="../assets/head.jpg">
-              <p>季冠霖声音课</p>
-            </li>
-          </ul>
-          <panel header="图文结合" :list="list" type="1"></panel>
-        </div>
+      </div>
     </div>
   </div>
 </transition>
