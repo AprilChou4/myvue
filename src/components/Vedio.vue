@@ -1,6 +1,6 @@
 <template>
 <transition name="showRouter">
-  <div>
+  <div class="g-wrap">
     <div class="g-header">
         <i class="iconfont">&#xe77e;</i>
         <span>我的音乐</span>

@@ -1,6 +1,6 @@
 <template>
 <transition name="showRouter">
-  <div>
+  <div class="g-wrap">
     <div class="g-header">
         <span>账号</span>
         <i class="iconfont">&#xe649;</i>
